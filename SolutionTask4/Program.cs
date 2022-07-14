@@ -1,4 +1,6 @@
-﻿string? inputLine = Console.ReadLine();
+﻿//Напишите программу, которая принимает на вход трёхзначное число и на выходе покзывает последнюю цифру этого числа.
+
+string? inputLine = Console.ReadLine();
 
 if(inputLine != null)
 {
