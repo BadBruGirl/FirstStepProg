@@ -1,4 +1,6 @@
-﻿string? inputLkneOne = Console.ReadLine();
+﻿//Напишите программу, которая на вход принимает два числа и выдает, какое число большее, а какое меньшее.
+
+string? inputLkneOne = Console.ReadLine();
 string? inputLkneTwo = Console.ReadLine();
 
 if(inputLkneOne != null && inputLkneTwo != null)
