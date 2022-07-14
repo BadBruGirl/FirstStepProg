@@ -1,4 +1,6 @@
-﻿string? inputLine = Console.ReadLine();
+﻿//Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
+
+string? inputLine = Console.ReadLine();
 
 if(inputLine != null)
 {
