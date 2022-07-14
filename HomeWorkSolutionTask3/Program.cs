@@ -1,4 +1,6 @@
-﻿string? inputLkwLine = Console.ReadLine();
+﻿//Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+string? inputLkwLine = Console.ReadLine();
 
 if(inputLkwLine != null)
 {
