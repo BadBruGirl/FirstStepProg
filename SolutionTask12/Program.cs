@@ -1,4 +1,7 @@
-﻿//Решение Николая
+﻿//Задача 12 Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому. Если второе число некратно первому, то программа выводит остаток от деления .
+
+
+//Решение Николая
 // string? inputLkneOne = Console.ReadLine();
 // string? inputLkneTwo = Console.ReadLine();
 
@@ -16,7 +19,7 @@
 
 // }
 
-//Решение Артема
+// //Решение Артема
 // Console.Write("Enter first number: ");
 // string? firstLine = Console.ReadLine();
 // Console.Write("Enter second number: ");
@@ -33,37 +36,37 @@
 //     Console.WriteLine("Не кратное, " + second%first);
 // }
 
-//Решение Кирилла
-Console.WriteLine("Input two numbers: ");
+// //Решение Кирилла
+// Console.WriteLine("Input two numbers: ");
 
-string? inputOne = Console.ReadLine();
-string? inputTwo = Console.ReadLine();
+// string? inputOne = Console.ReadLine();
+// string? inputTwo = Console.ReadLine();
 
-string reminderSearcher(string str1, string str2)
-{
-    if (inputOne != null && inputTwo != null)
-    {
-        try {
-            string answer;
-            int num1 = int.Parse(str1);
-            int num2 = int.Parse(str2);
-            int remainder = num1 % num2;
-            if (remainder != 0){
-                answer = "The remainder is : " + remainder;
-            } else {
-                answer = "It's multiple!!!";
-            }
-            return answer;
-        }
-        catch(Exception e)
-        {
-            return "Возникло исключение: " + e.Message;
-        }
-    }
-    return "";
-}
+// string reminderSearcher(string str1, string str2)
+// {
+//     if (inputOne != null && inputTwo != null)
+//     {
+//         try {
+//             string answer;
+//             int num1 = int.Parse(str1);
+//             int num2 = int.Parse(str2);
+//             int remainder = num1 % num2;
+//             if (remainder != 0){
+//                 answer = "The remainder is : " + remainder;
+//             } else {
+//                 answer = "It's multiple!!!";
+//             }
+//             return answer;
+//         }
+//         catch(Exception e)
+//         {
+//             return "Возникло исключение: " + e.Message;
+//         }
+//     }
+//     return "";
+// }
 
-Console.WriteLine(reminderSearcher(inputOne,inputTwo));
+// Console.WriteLine(reminderSearcher(inputOne,inputTwo));
 
 //Решение Ирины
 
