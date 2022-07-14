@@ -17,7 +17,7 @@ if(inputLine != null)
         lineOutput = lineOutput + startNumber+", ";
         startNumber = startNumber + 2;
     }
-    
+    lineOutput = lineOutput + startNumber;
     Console.WriteLine(lineOutput);
   
     // Console.Write($"{x}, ");
