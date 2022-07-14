@@ -1,4 +1,6 @@
-﻿string? inputLkneOne = Console.ReadLine();
+﻿//Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
+string? inputLkneOne = Console.ReadLine();
 string? inputLkneTwo = Console.ReadLine();
 string? inputLkneThree = Console.ReadLine();
 
