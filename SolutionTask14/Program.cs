@@ -1,60 +1,65 @@
-﻿// //Решение Николая
-// string? inputLkneOne = Console.ReadLine();
-// if(inputLkneOne != null){
-//     int inputNumberOne = int.Parse(inputLkneOne);
-//     if(inputNumberOne%7 == 0 && inputNumberOne%23 == 0){
-//         Console.WriteLine("Да");
-//     }else{
-//         Console.WriteLine("Нет");
-//     }
-// }
+﻿//Задача 14 Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
+
+//Решение Николая
+string? inputLkneOne = Console.ReadLine();
+if(inputLkneOne != null){
+    int inputNumberOne = int.Parse(inputLkneOne);
+    if(inputNumberOne%7 == 0 && inputNumberOne%23 == 0){
+        Console.WriteLine("Да");
+    }else{
+        Console.WriteLine("Нет");
+    }
+}
 
 // //Решение Артема
 
 // Console.Write("Enter number: ");
 // string? firstLine = Console.ReadLine();
+
+// if (firstLine != null)
+// {
 // int first = int.Parse(firstLine);
 
-
-// if (first%7 == 0 && first%23 == 0)
-// {
-//     Console.WriteLine("Кратное");
+//     if (first % 7 == 0 && first % 23 == 0)
+//     {
+//         Console.WriteLine("Кратное");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не кратное");
+//     }
 // }
-// else
+
+// //Решение Кирилла
+
+// string reminderSearcher(string str)
 // {
-//     Console.WriteLine("Не кратное");
+//     if (str != null)
+//     {
+//         try
+//         {
+//             string answer;
+//             int num = int.Parse(str);
+//             if (((num % 7) == 0) && ((num % 23) == 0))
+//             {
+//                 answer = "It's multiple for 7 and 23";
+//             }
+//             else
+//             {
+//                 answer = "It's not multiple for 7 and 23";
+//             }
+//             return answer;
+//         }
+//         catch (Exception e)
+//         {
+//             return "Возникло исключение: " + e.Message;
+//         }
+//     }
+//     return "";
 // }
 
-//Решение Кирилла
+// Console.WriteLine("Input number: ");
 
-string reminderSearcher(string str)
-{
-    if (str != null)
-    {
-        try
-        {
-            string answer;
-            int num = int.Parse(str);
-            if (((num % 7) == 0) && ((num % 23) == 0))
-            {
-                answer = "It's multiple for 7 and 23";
-            }
-            else
-            {
-                answer = "It's not multiple for 7 and 23";
-            }
-            return answer;
-        }
-        catch (Exception e)
-        {
-            return "Возникло исключение: " + e.Message;
-        }
-    }
-    return "";
-}
+// string? inputOne = Console.ReadLine();
 
-Console.WriteLine("Input number: ");
-
-string? inputOne = Console.ReadLine();
-
-Console.WriteLine(reminderSearcher(inputOne));
+// Console.WriteLine(reminderSearcher(inputOne));
