@@ -1,55 +1,55 @@
 ﻿// Задача №31 Задайте массив из 12 элементов, заполненныйслучайными числами из промежутка [-9, 9].Найдите сумму отрицательных и положительных элементов массива.
 
 //Переменные для накопления результата
-int poitivSum = 0;
-int negativSum = 0;
+// int poitivSum = 0;
+// int negativSum = 0;
 
-int[] FillingArray()
-{
-    int[] outArray = new int[12];
-    int i = 0;
-    System.Random numberSintezator = new Random();
-    while (i < 12)
-    {
-        outArray[i] = numberSintezator.Next(-9, 10);
-        i++;
-    }
-    return outArray;
-}
+// int[] FillingArray()
+// {
+//     int[] outArray = new int[12];
+//     int i = 0;
+//     System.Random numberSintezator = new Random();
+//     while (i < 12)
+//     {
+//         outArray[i] = numberSintezator.Next(-9, 10);
+//         i++;
+//     }
+//     return outArray;
+// }
 
 
-void ColculateTask(int[] outArray)
-{
-    int i = 0;
-    while (i < 12)
-    {
-        if (outArray[i] > 0)
-        {
-            poitivSum+=outArray[i];
-        }
-        else
-        {
-            negativSum+=outArray[i];
-        }
-        i++;
-    }
-}
+// void ColculateTask(int[] outArray)
+// {
+//     int i = 0;
+//     while (i < 12)
+//     {
+//         if (outArray[i] > 0)
+//         {
+//             poitivSum+=outArray[i];
+//         }
+//         else
+//         {
+//             negativSum+=outArray[i];
+//         }
+//         i++;
+//     }
+// }
 
-void PrintResult()
-{
-    Console.WriteLine(poitivSum);
-    Console.WriteLine(negativSum);
+// void PrintResult()
+// {
+//     Console.WriteLine(poitivSum);
+//     Console.WriteLine(negativSum);
 
-}
+// }
 
-void VariantNaive()
-{
-    int[] bufferArray = FillingArray();
-    ColculateTask(bufferArray);
-    PrintResult();
-}
+// void VariantNaive()
+// {
+//     int[] bufferArray = FillingArray();
+//     ColculateTask(bufferArray);
+//     PrintResult();
+// }
 
-VariantNaive();
+// VariantNaive();
 
 
 // System.Random numberSintezator = new Random();
