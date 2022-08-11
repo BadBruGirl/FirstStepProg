@@ -1,16 +1,12 @@
 ﻿// №43 Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем
 
-int valueB1;
+int valueB1; //введение глобальных переменных
 int valueK1;
 int valueB2;
 int valueK2;
 int coordyX=0;
 int coordyY=0;
 string coordy;
-
-ReadingFunctionValues();
-Conculate();
-PrintPointOfIntersectionOfCoordinates();
 
 
 void ReadingFunctionValues()
@@ -28,23 +24,27 @@ void ReadingFunctionValues()
     valueK2 = int.Parse(Console.ReadLine()?? "");
 }
 
-void Conculate()
+void Conculate() //метод подсчета координат точки пересечения
 {
     if ((valueK1 == valueK2)&&(valueB1 == valueB2))
     
-        Console.WriteLine("Прямые совпадают");
+        Console.WriteLine("Прямые совпадают"); //проверка на совпадение прямых
     else
         if (valueK1 == valueK2)
-        Console.WriteLine("Прямые совпадают");        
+        Console.WriteLine("Прямые параллельны"); //проверка на параллельность прямых       
     else
         {
-            coordyX=(valueB2-valueB1)/(valueK1-valueK2);
+            coordyX=(valueB2-valueB1)/(valueK1-valueK2); //применение расчетов
             coordyY=(valueK1*(valueB2-valueB1))/(valueK1-valueK2)+valueB1;
         }  
     coordy = "Координаты точки пересечения: " + coordyX + "," + coordyY;
 }
 
-void PrintPointOfIntersectionOfCoordinates()
+void PrintPointOfIntersectionOfCoordinates() //метод вывода ответа
 {
     Console.WriteLine(coordy);
 }    
+
+ReadingFunctionValues();
+Conculate();
+PrintPointOfIntersectionOfCoordinates();
